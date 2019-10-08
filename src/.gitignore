@@ -1,3 +1,6 @@
 *.pyc
-src/
 **/.ipynb_checkpoints
+src/tulin.egg-info/top_level.txt
+src/tulin.egg-info/SOURCES.txt
+src/tulin.egg-info/PKG-INFO
+src/tulin.egg-info/dependency_links.txt

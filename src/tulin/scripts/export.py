@@ -20,8 +20,8 @@ if __name__ == "__main__":
                     if "#export" in cell["source"][0]:
                         cell = cell["source"][1:]
                         for i, line in enumerate(cell):
-                            if "import src." in line or "from src." in line:
-                                cell[i] = line.replace("src.", ".")
+                            if "import " in line or "from " in line:
+                                cell[i] = line.replace("src.", "")
                         lines = lines + cell + ["\n\n"]
 
         if len(lines) > 0:
