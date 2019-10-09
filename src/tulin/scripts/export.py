@@ -20,7 +20,7 @@ for notebook in notebooks:
                 if "#export" in cell["source"][0]:
                     cell = cell["source"][1:]
                     for i, line in enumerate(cell):
-                        if "import ." in line or "from ." in line:
+                        if "import src." in line or "from src." in line:
                             cell[i] = line.replace("src.", ".")
                     lines = lines + cell + ["\n\n"]
 
